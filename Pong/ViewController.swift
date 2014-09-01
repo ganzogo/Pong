@@ -119,6 +119,8 @@ class PongScene : SKScene, SKPhysicsContactDelegate {
     
     if (contact.bodyA == self.floor?.physicsBody || contact.bodyB == self.floor?.physicsBody) {
       NSLog("floor");
+      self.ball.color = UIColor.blackColor()
+      self.backgroundColor = UIColor.redColor()
     }
     
   }
